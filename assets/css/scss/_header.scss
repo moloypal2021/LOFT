@@ -1,0 +1,71 @@
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include br-up(lg) {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .brand-area {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+
+        @include br-up(lg) {
+            position: relative;
+        }
+
+
+
+        .logo {
+            width: 128px;
+
+            @include br-up(sm) {
+                width: 148px;
+            }
+
+            @include br-up(md) {
+                width: 158px;
+            }
+
+            @include br-up(xl) {
+                width: 198px;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        position: relative;
+        z-index: 1;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+
+    .nav-item {
+        .nav-link {
+            @include br-up(lg) {
+                font-size: 14px;
+            }
+
+            @include br-up(xl) {
+                font-size: 16px;
+                padding-right: 14px;
+                padding-left: 14px;
+            }
+        }
+    }
+
+    .dropdown {
+        .dropdown-toggle::after {
+            display: none;
+        }
+    }
+}
