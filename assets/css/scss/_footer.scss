@@ -1,0 +1,104 @@
+.footer {
+    background: #242325;
+    padding-top: 66px;
+    padding-bottom: 20px;
+
+    @include br-up(md) {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    @include br-up(md) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include br-up(lg) {
+        padding-top: 58px;
+        padding-bottom: 84px;
+    }
+
+    .footer-brand {
+        margin-bottom: 46px;
+
+        @include br-up(sm) {
+            margin-bottom: 40px;
+        }
+
+        @include br-up(md) {
+            margin-bottom: 38px;
+
+        }
+
+        @include br-up(lg) {
+            margin-bottom: 34px;
+
+        }
+
+        .logo {
+            width: 100px;
+
+            @include br-up(sm) {
+                width: 118px;
+            }
+
+            @include br-up(md) {
+                width: 148px;
+            }
+
+            @include br-up(lg) {
+                width: 178px;
+            }
+        }
+    }
+
+    .footer-nav {
+        margin-bottom: 40px;
+
+        @include br-up(md) {
+            margin-bottom: 46px;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            padding: 0;
+
+            @include br-up(sm) {
+                font-size: 16px;
+            }
+
+            @include br-up(md) {
+                font-size: 18px;
+            }
+
+            @include br-up(lg) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .copyright-area {
+        border-top: 1px solid #333F51;
+        padding-top: 30px;
+
+        @include br-up(md) {
+            padding-top: 40px;
+        }
+
+        .copyright {
+            font-size: 14px;
+
+            @include br-up(sm) {
+                font-size: 16px;
+            }
+
+            @include br-up(md) {
+                font-size: 18px;
+            }
+
+            @include br-up(lg) {
+                font-size: 20px;
+            }
+        }
+    }
+}
