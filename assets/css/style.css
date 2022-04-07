@@ -170,6 +170,22 @@
   display: none;
 }
 
+.header .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.header .social-icons li:not(:last-child) {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+@media (min-width: 992px) {
+  .header .social-icons {
+    margin-left: 86px;
+  }
+}
+
 .footer {
   background: #242325;
   padding-top: 66px;
@@ -416,38 +432,16 @@
   }
 }
 
+@media (min-width: 992px) {
+  .homepage.heros .paragraph {
+    max-width: 470px;
+  }
+}
+
 .homepage.heros .btn-white {
   padding: 14px 48px;
   font-size: 14px;
   border-radius: 0px;
-}
-
-.homepage.heros .social-icons {
-  list-style: none;
-  margin-top: 48px;
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  .homepage.heros .social-icons {
-    margin-top: 60px;
-  }
-}
-
-@media (min-width: 992px) {
-  .homepage.heros .social-icons {
-    margin-top: 80px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .homepage.heros .social-icons {
-    margin-top: 96px;
-  }
-}
-
-.homepage.heros .social-icons li:not(:last-child) {
-  padding-right: 28px;
 }
 
 .homepage.heros .heros-carousel {
@@ -660,6 +654,7 @@
   bottom: 0;
   right: 0;
   width: 98px;
+  z-index: -1;
   -webkit-transform: translateX(20%) translateY(30%);
           transform: translateX(20%) translateY(30%);
 }

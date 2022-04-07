@@ -85,6 +85,10 @@
                 line-height: 30px;
                 margin-bottom: 54px;
             }
+
+            @include br-up(lg) {
+                max-width: 470px;
+            }
         }
 
         .btn-white {
@@ -93,30 +97,6 @@
             border-radius: 0px;
         }
 
-        .social-icons {
-            list-style: none;
-            margin-top: 48px;
-            padding: 0;
-
-            @include br-up(md) {
-                margin-top: 60px;
-            }
-
-            @include br-up(lg) {
-                margin-top: 80px;
-            }
-
-            @include br-up(xl) {
-                margin-top: 96px;
-            }
-
-            li {
-                &:not(:last-child) {
-                    padding-right: 28px;
-                }
-            }
-
-        }
 
         .heros-carousel {
             margin-left: -32px;
@@ -285,6 +265,7 @@
                 bottom: 0;
                 right: 0;
                 width: 98px;
+                z-index: -1;
                 transform: translateX(20%) translateY(30%);
 
                 @include br-up(sm) {
