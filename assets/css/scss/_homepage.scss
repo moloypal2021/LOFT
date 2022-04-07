@@ -6,6 +6,26 @@
             padding-bottom: 64px;
         }
 
+        .bg-l {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 330px;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            @include br-up(md) {
+                width: 460px;
+            }
+
+            @include br-up(lg) {
+                width: 660px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
         .background-desk {
             width: 100%;
             height: 100%;
@@ -16,6 +36,7 @@
             bottom: 0;
             z-index: -1;
             object-fit: cover;
+            object-position: 80%;
         }
 
         .subtitle {
@@ -339,128 +360,6 @@
         }
     }
 
-    &.timeline {
-        background: #56B467;
-        overflow: hidden;
-        width: 100%;
-        position: relative;
-        padding-top: 70px;
-        padding-bottom: 50px;
-
-        @include br-up(md) {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
-
-        .bg-l {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 360px;
-
-            @include br-up(md) {
-                width: 822px;
-            }
-        }
-
-        .icon-2 {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: translateX(50%);
-            margin-bottom: 210px;
-            width: 110px;
-
-            @include br-up(md) {
-                width: 340px;
-                margin-bottom: 0px;
-                transform: translateX(70%) translateY(70%);
-
-            }
-        }
-
-        .badge-border {
-            padding: 3px 6px;
-            border: 1px solid #FFFFFF;
-            font-size: 14px;
-            display: inline-block;
-            border-radius: 4px;
-            margin-bottom: 20px;
-
-            @include br-up(lg) {
-                margin-bottom: 18px;
-            }
-        }
-
-        .timeline-title {
-            font-size: 24px;
-            line-height: 120%;
-            letter-spacing: 0.06em;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 54px;
-
-            @include br-up(sm) {
-                font-size: 28px;
-                margin-bottom: 60px;
-            }
-
-            @include br-up(md) {
-                font-size: 36px;
-                letter-spacing: -0.02em;
-            }
-
-            @include br-up(lg) {
-                font-size: 40px;
-                letter-spacing: -0.02em;
-            }
-
-            @include br-up(xl) {
-                font-size: 48px;
-                letter-spacing: -0.02em;
-            }
-        }
-
-        .video-img {
-            max-width: 938px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 60px;
-
-            @include br-up(sm) {
-                margin-bottom: 72px;
-            }
-
-            img {
-                width: 100%;
-                height: 415px;
-
-                @include br-up(sm) {
-                    height: 455px;
-                }
-
-                @include br-up(md) {
-                    height: 505px;
-                }
-
-                @include br-up(lg) {
-                    height: 625px;
-                }
-            }
-        }
-
-        .timeline-btn {
-            font-size: 14px;
-            max-width: 482px;
-            width: 100%;
-            padding-top: 14px;
-            padding-bottom: 14px;
-        }
-    }
-
-
-
     &.price {
         margin-top: 16px;
 
@@ -752,4 +651,125 @@
         }
 
     }
+
+    &.timeline {
+        background: #56B467;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        padding-top: 70px;
+        padding-bottom: 50px;
+
+        @include br-up(md) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .bg-l {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+
+            @include br-up(md) {
+                width: 822px;
+            }
+        }
+
+        .icon-2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateX(50%);
+            margin-bottom: 210px;
+            width: 110px;
+
+            @include br-up(md) {
+                width: 340px;
+                margin-bottom: 0px;
+                transform: translateX(70%) translateY(70%);
+
+            }
+        }
+
+        .badge-border {
+            padding: 3px 6px;
+            border: 1px solid #FFFFFF;
+            font-size: 14px;
+            display: inline-block;
+            border-radius: 4px;
+            margin-bottom: 20px;
+
+            @include br-up(lg) {
+                margin-bottom: 18px;
+            }
+        }
+
+        .timeline-title {
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: 0.06em;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 54px;
+
+            @include br-up(sm) {
+                font-size: 28px;
+                margin-bottom: 60px;
+            }
+
+            @include br-up(md) {
+                font-size: 36px;
+                letter-spacing: -0.02em;
+            }
+
+            @include br-up(lg) {
+                font-size: 40px;
+                letter-spacing: -0.02em;
+            }
+
+            @include br-up(xl) {
+                font-size: 48px;
+                letter-spacing: -0.02em;
+            }
+        }
+
+        .video-img {
+            max-width: 938px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+
+            @include br-up(sm) {
+                margin-bottom: 72px;
+            }
+
+            img {
+                width: 100%;
+                height: 415px;
+
+                @include br-up(sm) {
+                    height: 455px;
+                }
+
+                @include br-up(md) {
+                    height: 505px;
+                }
+
+                @include br-up(lg) {
+                    height: 625px;
+                }
+            }
+        }
+
+        .timeline-btn {
+            font-size: 14px;
+            max-width: 482px;
+            width: 100%;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+    }
+
 }
